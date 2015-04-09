@@ -1,0 +1,26 @@
+.pages-heading {
+  margin-top: 1em;
+  margin-bottom: 0%;
+  padding-bottom: 1em;
+  text-align: center;
+  line-height: 1; }
+  .pages-heading:after {
+    content: '';
+    display: block;
+    width: 70px;
+    height: 2px;
+    background: #F6624A;
+    margin: 40px auto 0px; }
+
+.container {
+  width: 80%; }
+
+.flash {
+  background: #F6624A;
+  color: #ffffff;
+  width: 200px;
+  position: absolute;
+  right: 20px;
+  border-top: 20px;
+  padding: 1em;
+  display: none; }

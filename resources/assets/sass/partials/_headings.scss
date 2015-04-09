@@ -1,0 +1,16 @@
+.pages-heading{
+  margin-top: 1em;
+  margin-bottom: 0%;
+  padding-bottom: 1em;
+  text-align: center;
+  line-height: 1;
+
+  &:after{
+    content: '';
+    display: block;
+    width: 70px;
+    height: 2px;
+    background: $brandColor;
+    margin: 40px auto 0px;
+  }
+}

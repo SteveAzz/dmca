@@ -1,0 +1,17 @@
+@import "partials/colors";
+@import "partials/headings";
+
+.container{
+  width: 80%;
+}
+
+.flash{
+  background: $brandColor;
+  color: #ffffff;
+  width: 200px;
+  position: absolute;
+  right: 20px;
+  border-top: 20px;
+  padding: 1em;
+  display: none;
+}
