@@ -12,7 +12,8 @@
 	},
 	"require-dev": {
 		"phpunit/phpunit": "~4.0",
-		"phpspec/phpspec": "~2.1"
+		"phpspec/phpspec": "~2.1",
+		"laracasts/integrated": "0.13.*"
 	},
 	"autoload": {
 		"classmap": [
@@ -24,7 +25,8 @@
 	},
 	"autoload-dev": {
 		"classmap": [
-			"tests/TestCase.php"
+			"tests/TestCase.php",
+            "tests/support"
 		]
 	},
 	"scripts": {

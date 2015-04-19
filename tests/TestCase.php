@@ -1,19 +1,24 @@
 <?php
 
-class TestCase extends Illuminate\Foundation\Testing\TestCase {
+use Laracasts\Integrated\Extensions\Laravel as IntegratedTest;
+use Laracasts\Integrated\Services\Laravel\DatabaseTransactions;
 
-	/**
-	 * Creates the application.
-	 *
-	 * @return \Illuminate\Foundation\Application
-	 */
-	public function createApplication()
-	{
-		$app = require __DIR__.'/../bootstrap/app.php';
+class TestCase extends IntegratedTest
+{
 
-		$app->make('Illuminate\Contracts\Console\Kernel')->bootstrap();
+    use DatabaseTransactions, RegistersUsers;
+    /**
+     * Creates the application.
+     *
+     * @return \Illuminate\Foundation\Application
+     */
+    public function createApplication()
+    {
+        $app = require __DIR__ . '/../bootstrap/app.php';
 
-		return $app;
-	}
+        $app->make('Illuminate\Contracts\Console\Kernel')->bootstrap();
+
+        return $app;
+    }
 
 }
